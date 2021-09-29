@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap');
+
+:root {
+  --Moderate-cyan: hsl(176, 50%, 47%);
+  --Dark-cyan: hsl(176, 72%, 28%);
+  --Black: hsl(0, 0%, 0%);
+  --Dark-gray: hsl(0, 0%, 48%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Commissioner', sans-serif;
+}
+
+main {
+  position: absolute;
+}
+
+.header {
+  display: flex;
+  background: url('./images/image-hero-mobile.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 25em;
+  justify-content: space-between;
+  padding: 2em;
+}
+
+.section1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin: 2em;
+  padding: 2em;
+  bottom: 5em;
+  background: white;
+  border-radius: 10px;
+  position: relative;
+}
+
+.section1 .section1-logo {
+  position: relative;
+  bottom: 3.7em;
+}
+
+.section1 .section1-text {
+  line-height: 2em;
+  width: 20em;
+}
+
+.section1 .section1-text h2 {
+  margin-bottom: 1em;
+}
+
+.section1 .section1-text p {
+  color: var(--Dark-gray);
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.btn {
+  background-color: var(--Moderate-cyan);
+  border-radius: 30px;
+  height: 56px;
+  width: 220px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* .section1 .logo {
+  position: inherit;
+  bottom: 3.7em;
+}
+
+.section1 .section1-text {
+  width: ;
+}
+
+
+
+.flex-container {
+  display: inherit;
+  align-items: center;
+  justify-content: center;
+} */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

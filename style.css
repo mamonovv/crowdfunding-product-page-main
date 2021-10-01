@@ -33,6 +33,76 @@ main {
   padding: 2em;
 }
 
+.header-button {
+  z-index: 2;
+  background: none;
+  flex-shrink: 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.nav-links {
+  position: fixed;
+  top: 15vh;
+  right: 8.5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  z-index: 2;
+  height: 15em;
+  width: 80vw;
+  background: white;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
+  border-radius: 10px;
+}
+
+.nav-open .nav-links {
+  visibility: visible;
+  opacity: 1;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  color: var(--Black);
+  font-weight: 700;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 12px 15px;
+  background: transform 0.2s;
+  border-radius: 10px;
+  padding-left: 2em;
+}
+
+.nav-link:hover {
+  transition: 0.2s;
+  color: white;
+  background: var(--Dark-gray);
+}
+
+.nav-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.nav-open .nav-overlay {
+  visibility: visible;
+  opacity: 1;
+}
+
 .section1 {
   display: flex;
   justify-content: center;
@@ -40,8 +110,8 @@ main {
   text-align: center;
   flex-direction: column;
   margin: 2em;
-  padding: 2em;
-  bottom: 5em;
+  padding: 0 2em 2em 2em;
+  bottom: 6em;
   background: white;
   border-radius: 10px;
   position: relative;
@@ -49,16 +119,16 @@ main {
 
 .section1 .section1-logo {
   position: relative;
-  bottom: 3.7em;
+  bottom: 1.8em;
 }
 
 .section1 .section1-text {
-  line-height: 2em;
+  line-height: 1.8em;
   width: 20em;
 }
 
 .section1 .section1-text h2 {
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 }
 
 .section1 .section1-text p {

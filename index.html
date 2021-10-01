@@ -22,14 +22,24 @@
         <img src="./images/logo.svg" alt="" />
       </div>
 
-      <nav class="header-nav">
-        <ul>
-          <li>About</li>
-          <li>Discover</li>
-          <li>Get Started</li>
-        </ul>
-      </nav>
+      <button class="header-button" id="btnNav" type="button">
+        <img
+          class="button-img"
+          src="./images/icon-hamburger.svg"
+          alt="hamburger"
+        />
+      </button>
     </header>
+
+    <nav class="nav">
+      <div class="nav-links">
+        <a href="#" class="nav-link">About</a>
+        <a href="#" class="nav-link">Discover</a>
+        <a href="#" class="nav-link">Get Started</a>
+      </div>
+
+      <div class="nav-overlay"></div>
+    </nav>
 
     <main>
       <section class="section1">
@@ -142,6 +152,8 @@
         <a href="#">Out of Stock</a>
       </section>
     </main>
+
+    <script src="app.js"></script>
 
     <!-- Selection modal start -->
 

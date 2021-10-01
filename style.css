@@ -26,6 +26,10 @@ p {
   color: var(--Dark-gray);
 }
 
+p > span {
+  margin-right: 10px;
+}
+
 .header {
   display: flex;
   background: url('./images/image-hero-mobile.jpg');
@@ -180,7 +184,7 @@ p {
 }
 
 .progress-bar {
-  width: 60vw;
+  width: 70vw;
   height: 1em;
   border-radius: 10px;
   margin-top: 10px;
@@ -191,7 +195,7 @@ p {
   display: flex;
   position: absolute;
   min-width: 2rem;
-  width: 60%;
+  width: 65%;
   max-width: calc(100% - 1em);
   height: 1em;
   background-color: var(--Moderate-cyan);
@@ -199,6 +203,59 @@ p {
 }
 
 .def-margin {
+  margin: 0 4em 4em 4em;
+}
+
+.about h2 {
+  margin-bottom: 30px;
+}
+
+.about p,
+.left p {
+  line-height: 25px;
+  margin-bottom: 30px;
+}
+
+.left {
+  border: 1px solid rgba(201, 199, 199, 0.8);
+  border-radius: 10px;
+  padding: 2em;
+}
+
+.left h3 {
+  margin-bottom: 10px;
+}
+
+.left h3.cyan {
+  margin-bottom: 30px;
+}
+
+.cyan {
+  color: var(--Moderate-cyan);
+}
+
+.center {
+  display: flex;
+  margin: auto;
+}
+
+.hide {
+  border: none;
+  position: relative;
+}
+
+.hide .btn {
+  background-color: var(--Dark-gray);
+}
+
+.hide-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  z-index: 1;
 }
 
 .attribution {
